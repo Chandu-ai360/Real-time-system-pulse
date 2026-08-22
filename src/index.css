@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0b0e14;
+  --surface: #151921;
+  --surface-hover: #1c222d;
+  --border: #2d333d;
+  --border-subtle: #222731;
+  --text: #f0f2f5;
+  --text-dim: #94a3b8;
+  --text-muted: #64748b;
+  --accent-cpu: #00f2ff;
+  --accent-ram: #bd00ff;
+  --accent-disk: #00ff88;
+  --accent-warn: #f59e0b;
+  --accent-crit: #f43f5e;
+  --font: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0e14;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d333d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b4452;
+}
+
+/* Sleek Glowing Dot & Pulse Animation */
+@keyframes sleek-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 8px var(--accent-disk);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.9);
+    box-shadow: 0 0 2px var(--accent-disk);
+  }
+}
+
+.sleek-pulse-dot {
+  animation: sleek-pulse 2s infinite ease-in-out;
+}
+

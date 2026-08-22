@@ -1,0 +1,6 @@
+{
+  "name": "Real-Time System Metrics Monitor",
+  "description": "Real-time system metrics monitoring dashboard with WebSockets, Chart.js visualizations, and Python FastAPI backend implementation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
